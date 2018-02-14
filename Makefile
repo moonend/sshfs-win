@@ -1,6 +1,6 @@
-MyProductName = "SSHFS-Win"
-MyCompanyName = "Navimatics Corporation"
-MyDescription = "SSHFS for Windows"
+MyProductName = "MDFS"
+MyCompanyName = "DMSLAB, KK UNIV"
+MyDescription = "MDFS for Windows"
 MyVersion = 2.7.$(shell date '+%y%j')
 ifeq ($(shell uname -m),x86_64)
 	MyArch = x64
@@ -17,7 +17,7 @@ WixDir	= $(BldDir)/wix
 Status	= $(BldDir)/status
 BinExtra= ssh #bash ls mount
 
-export PATH := /cygdrive/c/Program Files (x86)/WiX Toolset v3.10/bin:$(PATH)
+export PATH := /cygdrive/c/Program Files (x86)/WiX Toolset v3.11/bin:$(PATH)
 
 goal: $(Status) $(Status)/done
 
